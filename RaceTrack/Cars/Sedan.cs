@@ -20,7 +20,7 @@ namespace RaceTrack.RaceTrack.Cars
         }
 
         public override void Brake() {
-            Console.WriteLine($"The {Name} stopped immediately Disobeying all laws of physics");
+            Console.WriteLine($"The {Name} immediately stopped disobeying physics");
 
             base.Brake();
         }
