@@ -11,7 +11,6 @@ namespace RaceTrack.RaceTrack
 {
     public class RaceTrack
     {
-
         public List<Driver> Drivers { get; set; }
         public int NumberOfLaps { get; set; }
 
@@ -26,6 +25,7 @@ namespace RaceTrack.RaceTrack
             Drivers.Add(new FarmerJoe(new Tractor()));
             Drivers.Add(new Antonio(new FordGt()));
             Drivers.Add(new SoccerMom(new Minivan()));
+            Drivers.Add(new Hunter(new Sedan()));
         }
 
         public void DriversReady()
@@ -60,6 +60,7 @@ namespace RaceTrack.RaceTrack
             foreach (var driver in Drivers)
             {
                 driver.Stop();
+                //driver.StopEngine();
             }
             Thread.Sleep(1000);
         }

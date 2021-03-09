@@ -4,9 +4,15 @@ namespace RaceTrack.RaceTrack.Cars
 {
     public abstract class RaceCar
     {
+        //extra credit NOT WORKING---
+        public virtual void StopEngine(){
+            Console.WriteLine($"Engine stopped");
+        }
+        //---
+
         protected RaceCar()
         {
-            Position = 0;
+            Position = 0;  
         }
 
         public string Name { get; set; }
@@ -27,12 +33,11 @@ namespace RaceTrack.RaceTrack.Cars
             else
                 Console.WriteLine($"{Name} has stopped!?");
         }
-
         public abstract void StartEngine();
-
         public virtual void Brake()
         {
             Console.WriteLine($"The {Name} ends in position {Position}!");
         }
+        
     }
 }
